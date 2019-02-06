@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:paddingBottom="32dp">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/select_your_theme"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+        <RadioButton
+            android:id="@+id/themeLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:buttonTint="?attr/textColorSecondary"
+            android:fontFamily="@font/quicksand_regular"
+            android:onClick="onClickLightDark"
+            android:text="Pure Light"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/themeDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:buttonTint="?attr/textColorSecondary"
+            android:fontFamily="@font/quicksand_regular"
+            android:onClick="onClickLightDark"
+            android:text="Kinda Dark"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/themeBlack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:buttonTint="?attr/textColorSecondary"
+            android:fontFamily="@font/quicksand_regular"
+            android:onClick="onClickLightDark"
+            android:text="Pure Black"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/themeBlueGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:buttonTint="?attr/textColorSecondary"
+            android:fontFamily="@font/quicksand_regular"
+            android:onClick="onClickLightDark"
+            android:text="Blue Grey"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/themeNightMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:buttonTint="?attr/textColorSecondary"
+            android:fontFamily="@font/quicksand_regular"
+            android:onClick="onClickLightDark"
+            android:text="Night Mode"
+            android:textColor="?attr/textColorPrimary"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_trans_ripple"
+        android:fontFamily="@font/quicksand_medium"
+        android:onClick="onClickCancel"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:stateListAnimator="@null"
+        android:text="@string/CANCEL"
+        android:textColor="?attr/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btm_nav_dash"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:checked="true"
+        android:title="@string/dashboard" />
+    <item
+        android:id="@+id/btm_nav_schedules"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="@string/schedule" />
+    <item android:enabled="false"
+        android:title=""/>
+    <item
+        android:id="@+id/btm_nav_notify"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="@string/notify" />
+    <item
+        android:id="@+id/btm_nav_updates"
+        android:icon="@drawable/updates"
+        android:title="@string/updates" />
+</menu>

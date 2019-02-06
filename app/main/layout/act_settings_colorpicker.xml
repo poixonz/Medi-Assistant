@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:paddingBottom="32dp">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_rect_trans_ripple"
+        android:onClick="onClickCancel"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:stateListAnimator="@null"
+        android:text="CANCEL"
+        android:textColor="?attr/colorAccent"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/colorPickerHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/robotoregular"
+        android:text="Select your color"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/colorPickerDivider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="?attr/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerHeader" />
+
+    <ImageButton
+        android:id="@+id/Indigo"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_indigo"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Blue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Red" />
+
+    <ImageButton
+        android:id="@+id/Blue"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_blue"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/LightBlue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Indigo"
+        app:layout_constraintTop_toBottomOf="@+id/Pink" />
+
+    <ImageButton
+        android:id="@+id/Teal"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_teal"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Green"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Indigo" />
+
+    <ImageButton
+        android:id="@+id/Green"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_green"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/LightGreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Teal"
+        app:layout_constraintTop_toBottomOf="@+id/Blue" />
+
+    <ImageButton
+        android:id="@+id/Cyan"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval_cyan"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LightBlue"
+        app:layout_constraintTop_toBottomOf="@+id/DeepPurple" />
+
+    <ImageButton
+        android:id="@+id/LightBlue"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_lightblue"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Cyan"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Blue"
+        app:layout_constraintTop_toBottomOf="@+id/Purple" />
+
+    <ImageButton
+        android:id="@+id/Yellow"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_yellow"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Amber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Teal" />
+
+    <ImageButton
+        android:id="@+id/Orange"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_orange"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/DeepOrange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Amber"
+        app:layout_constraintTop_toBottomOf="@+id/LightGreen" />
+
+    <ImageButton
+        android:id="@+id/Lime"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval_lime"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/LightGreen"
+        app:layout_constraintTop_toBottomOf="@+id/Cyan" />
+
+    <ImageButton
+        android:id="@+id/LightGreen"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_lightgreen"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Lime"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Green"
+        app:layout_constraintTop_toBottomOf="@+id/LightBlue" />
+
+    <ImageButton
+        android:id="@+id/Amber"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_amber"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Orange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Yellow"
+        app:layout_constraintTop_toBottomOf="@+id/Green" />
+
+    <ImageButton
+        android:id="@+id/DeepOrange"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval_deeporange"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Orange"
+        app:layout_constraintTop_toBottomOf="@+id/Lime" />
+
+    <ImageButton
+        android:id="@+id/BlueGrey"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/oval_bluegrey"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintStart_toEndOf="@+id/Brown"
+        app:layout_constraintTop_toBottomOf="@+id/Amber" />
+
+    <ImageButton
+        android:id="@+id/Brown"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/oval_brown"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintStart_toStartOf="@+id/Yellow"
+        app:layout_constraintTop_toBottomOf="@+id/Yellow" />
+
+    <ImageButton
+        android:id="@+id/Red"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_red"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Pink"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerDivider" />
+
+    <ImageButton
+        android:id="@+id/Pink"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_pink"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/Purple"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Red"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerDivider" />
+
+    <ImageButton
+        android:id="@+id/DeepPurple"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/oval_deeppurple"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Purple"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerDivider" />
+
+    <ImageButton
+        android:id="@+id/Purple"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/oval_purple"
+        android:contentDescription="@string/colorButtonDesc"
+        android:onClick="onClickColorPickerColorButton"
+        app:layout_constraintEnd_toStartOf="@+id/DeepPurple"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/Pink"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerDivider" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="?attr/colorDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BlueGrey" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/button_rect_ripple"
+        android:fontFamily="@font/robotoregular"
+        android:onClick="onClickSet"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:stateListAnimator="@null"
+        android:text="SET"
+        android:textColor="@color/grey200"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+</android.support.constraint.ConstraintLayout>

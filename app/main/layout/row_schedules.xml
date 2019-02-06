@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sc_parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/schedules_card_bg"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+    <TextView
+        android:id="@+id/meal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="meal"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/beforeOrAfter"
+        app:layout_constraintTop_toBottomOf="@+id/medicineType" />
+
+    <TextView
+        android:id="@+id/beforeOrAfter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Before"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/minutes"
+        app:layout_constraintTop_toBottomOf="@+id/medicineType" />
+
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="minutes"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/minbeforeAfter"
+        app:layout_constraintTop_toBottomOf="@+id/medicineType" />
+
+    <TextView
+        android:id="@+id/daysToCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="7"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/taken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="3"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView43"
+        app:layout_constraintTop_toTopOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/totalMedicine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="21"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView42"
+        app:layout_constraintTop_toTopOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Taken: "
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/totalMedicine"
+        app:layout_constraintTop_toTopOf="@+id/totalMedicine" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Total: "
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startDate" />
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="27.10.2018"
+        android:textColor="?attr/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/mediHave2"
+        app:layout_constraintTop_toBottomOf="@+id/mediHave2" />
+
+    <TextView
+        android:id="@+id/mediHave2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="End Date"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mediHave"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/medicineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/medi1"
+        android:textColor="?attr/textColorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/medicineType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Tablet"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView44"
+        app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/minbeforeAfter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="30"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicineType" />
+
+    <TextView
+        android:id="@+id/mediHave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Start date"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/mediHave2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mediHave2" />
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="20.10.2018"
+        android:textColor="?attr/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/mediHave"
+        app:layout_constraintTop_toBottomOf="@+id/mediHave" />
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:background="?attr/colorAccent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/medicineName" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/meal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view14"
+        app:srcCompat="@drawable/accent_preview" />
+
+    <TextView
+        android:id="@+id/timeToTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:gravity="center"
+        android:text="09:30"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/amOrPm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="AM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/timeToTake"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/timeToTake" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Days To Complete"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/daysToCom"
+        app:layout_constraintTop_toBottomOf="@+id/totalMedicine" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Type: "
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view14" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Today"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/amOrPm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="AM"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/timeToTake"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/timeToTake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="10:30"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/medicineName"
+        app:layout_constraintEnd_toStartOf="@+id/amOrPm" />
+
+    <TextView
+        android:id="@+id/medicineType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/tablet"
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/themedesc2"
+        app:layout_constraintTop_toBottomOf="@+id/medicineName" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="?attr/colorDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/medicineName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="@string/theme"
+        android:textColor="?attr/settingFontPrimary"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/themedesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="Type: "
+        android:textColor="?attr/textColorSecondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/medicineName"
+        app:layout_constraintTop_toBottomOf="@+id/medicineName" />
+
+    <View
+        android:id="@+id/Notify_Overlay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1e808080"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Notify_Dot"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/amOrPm"
+        app:layout_constraintStart_toEndOf="@+id/timeToTake"
+        app:layout_constraintTop_toBottomOf="@+id/amOrPm"
+        app:srcCompat="@drawable/accent_preview" />
+</android.support.constraint.ConstraintLayout>

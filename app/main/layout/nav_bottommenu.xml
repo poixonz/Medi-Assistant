@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/NavSecOne"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/BtnSchedules"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:contentDescription="@string/image"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/BtnDashboard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/schedules" />
+
+        <TextView
+            android:id="@+id/TxtSchedules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/schedule"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/BtnSchedules"
+            app:layout_constraintStart_toStartOf="@+id/BtnSchedules" />
+
+        <ImageButton
+            android:id="@+id/BtnDashboard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/setting_item_ripple"
+            android:contentDescription="@string/image"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/BtnSchedules"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_dashboard_black_24dp" />
+
+        <TextView
+            android:id="@+id/TxtDashboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/dashboard"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/BtnSchedules"
+            app:layout_constraintStart_toStartOf="@+id/BtnDashboard" />
+    </android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:background="@drawable/navigation4"
+        android:contentDescription="@string/image"
+        app:layout_constraintEnd_toStartOf="@+id/NavSecTwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/NavSecOne"
+        app:layout_constraintTop_toTopOf="@+id/NavSecTwo" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/NavSecTwo"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView">
+
+        <ImageButton
+            android:id="@+id/BtnUpdates"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:contentDescription="@string/image"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/BtnNotify"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/updates" />
+
+        <TextView
+            android:id="@+id/TxtUpdates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/updates"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/BtnUpdates"
+            app:layout_constraintEnd_toEndOf="@+id/BtnUpdates"
+            app:layout_constraintStart_toEndOf="@+id/BtnNotify" />
+
+        <ImageButton
+            android:id="@+id/BtnNotify"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:contentDescription="@string/image"
+            android:paddingBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/BtnUpdates"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/TxtNotify"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_notifications_black_24dp" />
+
+        <TextView
+            android:id="@+id/TxtNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/notify"
+            android:textColor="?attr/textColorSecondary"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/BtnNotify"
+            app:layout_constraintStart_toStartOf="@+id/BtnNotify" />
+    </android.support.constraint.ConstraintLayout>
+    <View
+        android:id="@+id/NavShadow"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:background="@drawable/bottom_nav_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/NavSecOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
