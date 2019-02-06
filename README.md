@@ -11,8 +11,6 @@ all the information user can save,edit and update.
 
 ## Features
 
----
-
 * User can add reminder of a medicine
 * user can see reminder of upcoming medicine
 * list of medicine to take
@@ -28,15 +26,12 @@ all the information user can save,edit and update.
 
 ## Platform
 
----
-
-> __TYE__ : Mobile Application <br>
+> __TYPE__ : Mobile Application <br>
 __Language__ : JAVA <br>
 __IDE__ : Android Studio, Adobe XD(Prototype) <br>
 __Database__ : MySQL
 
 ## Screenshoots
- ---
 
 ![Dash_Light](https://i.ibb.co/RcfT9Ps/Dash-Light.png)
 ![Dash_Dark](https://i.ibb.co/6HpGD21/Dash-Dark.png)
@@ -66,7 +61,6 @@ __Database__ : MySQL
 ![Add_Dark](https://i.ibb.co/kBkbMbh/Add-Dark.png)
 
 ## Status
- ---
 
 ### __[N.B.]__ This application is still in development <br>
 ### will be published soon
